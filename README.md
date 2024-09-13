@@ -1,4 +1,4 @@
-# AWS App Autoscaling Module
+# AWS ECS Auto Scaling Standard Module
 
 ## Description 
 
@@ -9,13 +9,13 @@ This Terraform module sets up AWS App Autoscaling targets and policies for ECS s
 | Name | Version | 
 |------|---------| 
 | terraform | >= 1.3.0 | 
-| aws | ~> 4.0 | 
+| aws | >= 4.0 | 
 
 ## Providers 
 
 | Name | Version | 
 |------|---------| 
-| aws | ~> 4.0 | 
+| aws | >= 4.0 | 
 
 ## Inputs 
 
