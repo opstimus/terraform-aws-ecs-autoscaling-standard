@@ -26,6 +26,7 @@ variable "memory_target_value" {
 
 variable "custom_metric_target_value" {
   type = number
+  default = null
 }
 
 variable "scale_in_cooldown" {
