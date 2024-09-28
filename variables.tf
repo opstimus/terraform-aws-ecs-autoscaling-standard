@@ -51,11 +51,11 @@ variable "custom_metric_name" {
   type = string
 }
 
-variable "custom_namespace" {
+variable "custom_metric_namespace" {
   type = string
 }
 
-variable "custom_statistic" {
+variable "custom_metric_statistic" {
   type = string
 }
 
