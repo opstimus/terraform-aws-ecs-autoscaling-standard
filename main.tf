@@ -59,8 +59,8 @@ resource "aws_appautoscaling_policy" "custom_metric_scale" {
       statistic   = var.custom_metric_statistic
 
       dimensions {
-        name  = var.custom_dimension_name
-        value = var.custom_dimension_value
+        name  = var.custom_metric_dimension_name
+        value = var.custom_metric_dimension_value
       }
     }
 

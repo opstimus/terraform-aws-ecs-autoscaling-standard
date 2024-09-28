@@ -59,10 +59,10 @@ variable "custom_metric_statistic" {
   type = string
 }
 
-variable "custom_dimension_name" {
+variable "custom_metric_dimension_name" {
   type = string
 }
 
-variable "custom_dimension_value" {
+variable "custom_metric_dimension_value" {
   type = string
 }
