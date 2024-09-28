@@ -25,7 +25,7 @@ variable "memory_target_value" {
 }
 
 variable "custom_metric_target_value" {
-  type = number
+  type    = number
   default = null
 }
 
@@ -47,14 +47,22 @@ variable "custom_metric_scale_out_cooldown" {
   type = number
 }
 
-variable "metric_name" {
+variable "custom_metric_name" {
   type = string
 }
 
-variable "namespace" {
+variable "custom_namespace" {
   type = string
 }
 
-variable "statistic" {
+variable "custom_statistic" {
+  type = string
+}
+
+variable "custom_dimension_name" {
+  type = string
+}
+
+variable "custom_dimension_value" {
   type = string
 }

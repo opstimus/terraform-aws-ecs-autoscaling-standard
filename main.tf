@@ -54,9 +54,14 @@ resource "aws_appautoscaling_policy" "custom_metric_scale" {
 
   target_tracking_scaling_policy_configuration {
     customized_metric_specification {
-      metric_name = var.metric_name
-      namespace   = var.namespace
-      statistic   = var.statistic
+      metric_name = var.custom_metric_name
+      namespace   = var.custom_namespace
+      statistic   = var.custom_statistic
+
+      dimensions {
+        name  = var.custom_dimension_name
+        value = var.custom_dimension_value
+      }
     }
 
     target_value       = var.custom_metric_target_value
